@@ -64,4 +64,3 @@ cat data-hold/congress-twitter-profiles.json | \
 echo '19.'
 cat data-hold/congress-twitter-profiles.json | \
   jq --raw-output '.[] | [.screen_name, .statuses_count, .followers_count, .created_at] | @csv' | head -n 10
-
